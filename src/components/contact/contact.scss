@@ -1,0 +1,127 @@
+@import "../../global.scss";
+
+.contact{
+    background-color: white;
+    display: flex;
+
+    @include mobile{
+        flex-direction: column;
+    }
+
+    @import "../../global.scss";
+    
+    .left{
+        flex: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        img{
+            height: 90%;
+            border-radius: 30%;
+            border-color: white;
+            border-width: 50cqmax;
+            transition: all 1s ease;
+            overflow: hidden;
+        }
+        &:hover{
+            transform: scale(0.9);
+            transition: all 0.5s ease-in-out;
+            overflow: hidden;
+        }
+    }
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            h2{
+                font-size: 50px;
+                font-family: 'Delicious Handrawn', cursive;
+                color: black;
+            }
+
+            form{
+                width: 70%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                overflow: hidden;
+
+                input{
+                    border-radius: 10px;
+                    width: 500px;
+                    height: 30px;
+                    font-size: 20px;
+                    color: black;
+                    font-family: 'Dosis', sans-serif;
+                    overflow: hidden;
+
+                    label{
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                    @include mobile{
+                        width: 90%;
+                        height: 18px;
+                    }
+
+                }
+
+                button{
+                    align-items: center;
+                    justify-content: center;
+                    background-color: black;
+                    color: white;
+                    font-family: 'Delicious Handrawn', cursive;
+                    font-size: 20px;
+                    border-radius: 20px;
+                    padding: 5px 10px 5px 10px;
+                    border: none;
+                    margin-left: 35%;
+                    width: 200px;
+                    height: 40px;
+
+                    &:hover{
+                        background-color: rgb(214, 255, 214);
+                        color: black;
+                    }
+                    &:visited, &:active, &::after {
+                        background-color: white;
+                        color: crimson;
+                    }
+
+                    @include mobile{
+                        display: flex;
+                        align-items: center;
+                        margin-left: 0px;
+                        justify-content: center;
+                        margin-left: 30px;
+                    }
+
+                }
+                
+                textarea{
+                    border-radius: 10px;
+                    width: 500px;
+                    height: 200px;
+                    font-size: 18px;
+                    color: black;
+                    font-family: 'Dosis', sans-serif;
+
+                    @include mobile{
+                        width: 90%;
+                        height: 90px;
+                    }
+                }
+        }
+    }
+}

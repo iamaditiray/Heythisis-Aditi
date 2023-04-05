@@ -1,0 +1,146 @@
+@import "../../global.scss";
+
+.skills{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  
+    h1{
+      margin-left: -20px;
+      color: black;
+      font-size: 50px;
+      font-family: 'Delicious Handrawn', cursive;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .options{
+     
+  
+    ul{
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      width: 900px;
+      height: 100px;
+      overflow: hidden;
+      justify-content: center;
+      transition: all 1s ease;
+
+      @include mobile{
+        gap: -10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+    }
+  }
+  
+    .progress-bar-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 70%;
+      width: 700px;
+      overflow: hidden;
+      transition: all 1s ease;
+
+      @include mobile{
+        display: flex;
+        flex-direction: column;
+        height: 30%;
+        margin-top: 30px;
+      }
+
+      .skill-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 700px;
+        height: 80px;
+
+        @include mobile{
+          width: 400px;
+        }
+  
+        .skill-title {
+          display: flex;
+          align-items: center;
+  
+          img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+
+            @include mobile{
+              width: 18px;
+              height: 18px;
+              margin-right: 1px;
+            }
+          }
+          h3{
+            font-size: 18px;
+            font-family: 'Dosis', sans-serif;
+
+            @include mobile{
+              font-size: 15px;
+            }
+
+          }
+        }
+  
+        .progress-container {
+          width: 40%;
+          height: 30px;
+          background-color: #f2f2f2;
+          border-radius: 50px;
+          position: absolute;
+          column-gap: 5px;
+          margin-left: 50px;
+          align-items: center;
+          justify-content: center;
+          margin-left: 150px;
+
+        @include mobile{
+          width: 60%;
+          position: absolute;
+          margin-left: 100px;
+          align-items: flex-start;
+        }
+
+          .progress-bar {
+            width: 80%;
+            height: 30px;
+            background-color: rgb(194, 240, 186);
+            border-radius: 50px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: width 1s ease-in-out;
+            display: flex;
+            align-items: center;
+
+          
+            p{
+              margin-right: 30px;
+              margin-left: 30px;
+              display: flex;
+              align-items: center;
+              color: black;
+              font-weight: 700;
+              font-size: 15px;
+              margin-top: 2px;
+            }
+          }
+          }
+        }
+      }
+    }
+  
+  

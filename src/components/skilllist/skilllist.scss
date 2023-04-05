@@ -1,0 +1,40 @@
+@import "../../global.scss";
+
+.skilllist{
+    padding: 10px 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    margin-right: 50px;
+    padding: 7px;
+    background-color: rgb(205, 251, 205);
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+    transition: all 0.5s ease;
+   
+    @include mobile{
+        background-color: black;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    &:hover{
+        background-color: rgb(0, 61, 0);
+        color: white;
+        opacity: 90%;
+    }
+    &.active{
+        color: white;
+        background-color: black;   
+        
+        @include mobile{
+            background-color: rgb(223, 223, 223);
+            color: black;
+            border: black;
+            
+        }
+    }
+
+}
