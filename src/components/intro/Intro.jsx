@@ -10,8 +10,8 @@ export default function Intro() {
 
   const handleGetResumeClick = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "/assets/AditiRay-Resume.pdf";
-    downloadLink.download = "AditiRay-Resume.pdf";
+    downloadLink.href = "public/assets/Aditi_Ray_Resume2023.pdf";
+    downloadLink.download = "Aditi_Ray_Resume2023.pdf";
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
